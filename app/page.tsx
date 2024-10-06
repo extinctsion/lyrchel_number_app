@@ -7,7 +7,7 @@ function reverseNumber(num) {
 }
 
 // 196 Algorithm to find lyrchel_number
-function lyrchelNumber(num) {
+function lyrchelNumber(num: number): { palindrome: number | null; steps: number } {{
   let iterations = 0;
   while (iterations < 1000) { // Limit the iterations
     const reversed = reverseNumber(num);
@@ -21,7 +21,7 @@ function lyrchelNumber(num) {
 }
 
 export default function Page() {
-  const [lyrchelResult, setLyrchelResult] = useState(null);
+  const [lyrchelResult, setLyrchelResult] = useState<{ palindrome: number | null; steps: number } | null>(null);
 
   const handleLyrchelCalculation = () => {
     const result = lyrchelNumber(196); // Use 196 as an example
