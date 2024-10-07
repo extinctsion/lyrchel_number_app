@@ -52,9 +52,9 @@ export default function Page() {
           )}
         </div>
       )} */}
-      <div className="my-8">
+      {/* <div className="my-8">
         <BlogPosts />
-      </div>
+      </div> */}
     </section>
   );
 }
