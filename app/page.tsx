@@ -35,16 +35,20 @@ export default function Page() {
         Lychrel Number
       </h1>
       <p className="mb-4">
-        {`A Lychrel number is a natural number that cannot form a palindrome through 
-        the iterative process of repeatedly reversing its digits and adding the resulting numbers. 
-        This process is sometimes called the 196-algorithm, 
-        after the most famous number associated with the process.
+        {`A Lychrel number is a natural number that cannot form a palindrome 
+        through the iterative process of reversing its digits and adding the 
+        result to the original number. The process continues by taking the result
+         and repeating the same operation: reversing its digits and adding it again,
+          in a repeated attempt to reach a palindrome.`}
+      </p>
+      <h2 className="mb-4 font-semibold tracking-tighter">
         Lychrel Number Process Example
-For a number like 56:
-
-Reverse the digits: 56 → 65
-Add the result to the original number: 56 + 65 = 121, which is a palindrome.
-For the number 196, no palindrome has been found, despite extensive attempts, making it a famous Lychrel candidate.`}
+      </h2>
+      <p className="mb-4">
+        {`For a number like 56:
+        Reverse the digits: 56 → 65
+        Add the result to the original number: 56 + 65 = 121, which is a palindrome.
+        For the number 196, no palindrome has been found, despite extensive attempts, making it a famous Lychrel candidate.`}
       </p>
       {/* <button onClick={handleLyrchelCalculation} className="my-4 px-4 py-2 bg-blue-500 text-white">
         Calculate Lyrchel Number Using 196 Algorithm
